@@ -69,7 +69,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"id\": \"E007\",\n  \"RESPONSABLE\": \"Elizabeth Erazo\",\n  \"CODI_OPERADOR\": \"ENE-07\",\n  \"TIPUS\": \"ràpida\",\n  \"NOM\": \"Estació Plaça d'Espanya\",\n  \"UBICACIO\": \"Barcelona - Plaça d'Espanya\",\n  \"DATA\": \"16-11-2026\",\n  \"PLACES\": 12,\n  \"DISPONIBLES\": 8,\n  \"DESTACAT\": false\n}"
+          "raw": "{\n  \"id\": \"E007\",\n  \"RESPONSABLE\": \"Elizabeth Erazo Chacon\",\n  \"CODI_OPERADOR\": \"ENE-07\",\n  \"TIPUS\": \"ràpida\",\n  \"NOM\": \"Estació Plaça d'Espanya\",\n  \"UBICACIO\": \"Barcelona - Plaça d'Espanya\",\n  \"DATA\": \"16-11-2026\",\n  \"PLACES\": 12,\n  \"DISPONIBLES\": 8,\n  \"DESTACAT\": false\n}"
         },
         "url": "{{baseUrl}}/puntsRecarrega"
       },

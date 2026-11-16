@@ -20,7 +20,7 @@
       <body>
         <header><div class="brand">ElectroCat <small>Xarxa de Recàrrega</small></div><nav><a href="index.html">Portada</a><a class="active" href="electracat_erazo.xml">Punts de recàrrega XSL</a><a href="fitxes.html">Fitxes</a></nav></header>
         <main><p class="eyebrow">Consulta operativa</p><h1>Punts de recàrrega</h1><p>Informació actualitzada de la xarxa ElectraCat.</p><div class="table-wrap"><table><thead><tr><th>ID</th><th>Responsable</th><th>Codi operador</th><th>Tipus</th><th>Nom</th><th>Ubicació</th><th>Data</th><th>Places</th><th>Disponibles</th><th>Destacat</th></tr></thead><tbody><xsl:for-each select="puntsRecarrega/puntRecarrega"><tr><xsl:if test="@DESTACAT = 'sí'"><xsl:attribute name="class">destacat</xsl:attribute></xsl:if><td><xsl:value-of select="@id"/></td><td><xsl:value-of select="RESPONSABLE"/></td><td><xsl:value-of select="CODI_OPERADOR"/></td><td><xsl:value-of select="TIPUS"/></td><td><xsl:value-of select="NOM"/></td><td><xsl:value-of select="UBICACIO"/></td><td><xsl:value-of select="DATA"/></td><td><xsl:value-of select="PLACES"/></td><td><xsl:value-of select="DISPONIBLES"/></td><td><xsl:value-of select="@DESTACAT"/></td></tr></xsl:for-each></tbody></table></div><a class="back" href="index.html">← Tornar a la portada</a></main>
-        <footer>Elizabeth Erazo · CFGS Desenvolupament d'Aplicacions Web · M0373 Llenguatge de marques i sistemes de gestió d'informació</footer>
+        <footer>Elizabeth Erazo Chacon · CFGS Desenvolupament d’Aplicacions Multiplataforma · M0373 Llenguatge de marques i sistemes de gestió d'informació</footer>
       </body>
     </html>
   </xsl:template>

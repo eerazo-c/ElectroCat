@@ -26,6 +26,41 @@ body {
   font-size: 1.12rem;
 }
 
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  margin: 1.6rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  font-weight: 700;
+}
+
+.status-dot {
+  width: 1.35rem;
+  height: 1.35rem;
+  border: 1px solid rgba(0, 0, 0, .35);
+  border-radius: 50%;
+}
+
+.available {
+  background: #35a853;
+}
+
+.featured-dot {
+  background: #3d5ca8;
+}
+
+.free {
+  background: #f7b928;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
