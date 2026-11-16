@@ -1,0 +1,79 @@
+{
+  "puntsRecarrega": [
+    {
+      "id": "E001",
+      "RESPONSABLE": "Elizabeth Erazo",
+      "CODI_OPERADOR": "ENE-01",
+      "TIPUS": "ràpida",
+      "NOM": "Estació Fira de Barcelona",
+      "UBICACIO": "Barcelona - Gran Via",
+      "DATA": "14-11-2026",
+      "PLACES": 17,
+      "DISPONIBLES": 10,
+      "DESTACAT": true
+    },
+    {
+      "id": "E002",
+      "RESPONSABLE": "Elizabeth Erazo",
+      "CODI_OPERADOR": "ENE-02",
+      "TIPUS": "lenta",
+      "NOM": "Aparcament Park Diagonal",
+      "UBICACIO": "Barcelona - L'Eixample",
+      "DATA": "21-11-2026",
+      "PLACES": 30,
+      "DISPONIBLES": 19,
+      "DESTACAT": true
+    },
+    {
+      "id": "E003",
+      "RESPONSABLE": "Elizabeth Erazo",
+      "CODI_OPERADOR": "ENE-03",
+      "TIPUS": "ultraràpida",
+      "NOM": "Àrea de servei AP-7 Sud",
+      "UBICACIO": "La Jonquera",
+      "DATA": "09-07-2027",
+      "PLACES": 13,
+      "DISPONIBLES": 7,
+      "DESTACAT": true
+    },
+    {
+      "id": "E004",
+      "RESPONSABLE": "Elizabeth Erazo",
+      "CODI_OPERADOR": "ENE-04",
+      "TIPUS": "semiràpida",
+      "NOM": "CC La Maquinista",
+      "UBICACIO": "Barcelona - Sant Andreu",
+      "DATA": "05-12-2026",
+      "PLACES": 20,
+      "DISPONIBLES": 14,
+      "DESTACAT": false
+    },
+    {
+      "id": "E005",
+      "RESPONSABLE": "Elizabeth Erazo",
+      "CODI_OPERADOR": "ENE-05",
+      "TIPUS": "ràpida",
+      "NOM": "Polígon Can Sant Joan",
+      "UBICACIO": "Sant Cugat del Vallès",
+      "DATA": "12-06-2027",
+      "PLACES": 15,
+      "DISPONIBLES": 10,
+      "DESTACAT": true
+    },
+    {
+      "id": "diXReB5"
+    },
+    {
+      "id": "E007",
+      "RESPONSABLE": "Elizabeth Erazo",
+      "CODI_OPERADOR": "ENE-07",
+      "TIPUS": "ràpida",
+      "NOM": "Estació Plaça d'Espanya",
+      "UBICACIO": "Barcelona - Plaça d'Espanya",
+      "DATA": "16-11-2026",
+      "PLACES": 12,
+      "DISPONIBLES": 8,
+      "DESTACAT": false
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+@import url("styles.css");
+
+body {
+  background: var(--cream);
+}
+
+.intro {
+  padding: 5rem max(5vw, 1.5rem) 3rem;
+  background: linear-gradient(120deg, var(--sage), var(--cream));
+}
+
+.intro > * {
+  max-width: 850px;
+}
+
+.intro h1 {
+  margin: .2rem 0 1rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: -.055em;
+}
+
+.intro p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 1.12rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+  max-width: 1450px;
+  margin: auto;
+  padding: 1rem max(5vw, 1.5rem) 5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 1.1rem .4rem 1.1rem .4rem;
+  background: white;
+  box-shadow: 0 5px 18px rgba(52, 35, 63, .08);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(52, 35, 63, .16);
+}
+
+.card.featured {
+  border-top: 5px solid var(--moss);
+}
+
+.card > img {
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.2rem;
+}
+
+.tag {
+  align-self: flex-start;
+  padding: .22rem .55rem;
+  border-radius: 999px;
+  background: var(--sage);
+  color: var(--forest);
+  font-size: .78rem;
+  font-weight: 800;
+}
+
+.card h2 {
+  margin: .85rem 0 .3rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+  line-height: 1.15;
+}
+
+.location {
+  margin: 0;
+  color: var(--muted);
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .7rem;
+  margin: 1.3rem 0;
+}
+
+dl div {
+  padding: .55rem .7rem;
+  border-radius: .35rem;
+  background: var(--sand);
+}
+
+dt {
+  color: var(--muted);
+  font-size: .75rem;
+  font-weight: 750;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+dd {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.card .button {
+  margin-top: auto;
+  text-align: center;
+}
+
+@media (max-width: 950px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

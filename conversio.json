@@ -1,0 +1,106 @@
+{
+  "info": {
+    "_postman_id": "8b3fec69-caba-4d9e-b767-b6016fe010e0",
+    "name": "conversioJson",
+    "description": "Consultes de l'activitat 4 sobre la xarxa ElectraCat. Inicia JSON Server amb db.json abans d'executar-les.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. Obtenir tots els punts de recàrrega",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/puntsRecarrega"
+      },
+      "response": []
+    },
+    {
+      "name": "2. Obtenir el punt E003",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/puntsRecarrega/E003"
+      },
+      "response": []
+    },
+    {
+      "name": "3. Filtrar els punts de tipus ràpida",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/puntsRecarrega?TIPUS=r%C3%A0pida"
+      },
+      "response": []
+    },
+    {
+      "name": "4. Ordenar per places de major a menor",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/puntsRecarrega?_sort=PLACES&_order=desc"
+      },
+      "response": []
+    },
+    {
+      "name": "5. Filtrar disponibles superiors a 8",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/puntsRecarrega?DISPONIBLES_gt=8"
+      },
+      "response": []
+    },
+    {
+      "name": "6. Afegir el nou punt E007",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": \"E007\",\n  \"RESPONSABLE\": \"Elizabeth Erazo\",\n  \"CODI_OPERADOR\": \"ENE-07\",\n  \"TIPUS\": \"ràpida\",\n  \"NOM\": \"Estació Plaça d'Espanya\",\n  \"UBICACIO\": \"Barcelona - Plaça d'Espanya\",\n  \"DATA\": \"16-11-2026\",\n  \"PLACES\": 12,\n  \"DISPONIBLES\": 8,\n  \"DESTACAT\": false\n}"
+        },
+        "url": "{{baseUrl}}/puntsRecarrega"
+      },
+      "response": []
+    },
+    {
+      "name": "7. Eliminar el punt E006",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "{{baseUrl}}/puntsRecarrega/E006"
+      },
+      "response": []
+    },
+    {
+      "name": "8. Modificar E002: 30 places i destacat",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"PLACES\": 30,\n  \"DESTACAT\": true\n}"
+        },
+        "url": "{{baseUrl}}/puntsRecarrega/E002"
+      },
+      "response": []
+    }
+  ]
+}
